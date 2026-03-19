@@ -2,21 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Happy Birthday ❤️</title>
+    <title>Happy Birthday Dedeepya ❤️</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <h1 id="title">Happy Birthday ❤️</h1>
-    
-    <button onclick="showMessage()">Click for Surprise 🎁</button>
+<!-- Countdown -->
+<div id="countdownScreen" class="lock">
+    <h2>Something special is coming... ⏳</h2>
+    <h1 id="countdown"></h1>
+</div>
 
-    <p id="message" class="hidden">
-        You are the most special person in my life 💖  
-        I wish you happiness, love, and success always.  
-        Happy Birthday once again 🎉
-    </p>
+<!-- Password -->
+<div id="lockScreen" class="lock" style="display:none;">
+    <h2>Enter Password 🔒</h2>
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <br><br>
+    <button onclick="checkPassword()">Unlock 🎁</button>
+</div>
+
+<!-- Main -->
+<div id="mainContent" style="display:none;">
+
+<div class="container">
+
+    <h1 class="fade">Happy Birthday Dedeepya ❤️</h1>
+
+    <h2 id="typing" class="typing"></h2>
+
+    <button onclick="startSurprise()">Open Your Surprise 🎁</button>
+
+    <div id="surprise" class="hidden">
+
+        <!-- Music -->
+        <audio id="music" loop>
+            <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Voice -->
+        <audio id="voice">
+            <source src="https://www.myinstants.com/media/sounds/happy-birthday-to-you.mp3" type="audio/mpeg">
+        </audio>
+
+        <p class="message">
+            Happy Birthday Dhi-Dhi,<br><br>
+
+            I hope you always have that beautiful smile on your face 😊  
+            Because it truly suits you and makes you look even more beautiful.<br><br>
+
+            So please keep smiling… for me 💖<br><br>
+
+            And if anything ever troubles you,  
+            remember—you can always talk to me.<br><br>
+
+            Even though sometimes it feels like it’s the other way around 😄<br><br>
+
+            I genuinely hope our friendship never ends…  
+            even after B-Tech.<br><br>
+
+            Some people just become important without trying…  
+            and you are one of them.<br><br>
+
+            I’ll stop here before this becomes too long…<br><br>
+
+            <b>Once again,<br>
+            Happy Birthday Dhi-Dhi 🎉</b>
+        </p>
+
+    </div>
+
+</div>
+
+<canvas id="fireworks"></canvas>
+
 </div>
 
 <script src="script.js"></script>
